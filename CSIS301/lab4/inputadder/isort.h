@@ -1,0 +1,1 @@
+void isortptr(int *a, int asize);
