@@ -174,3 +174,27 @@ void sll_print_contents(sll *l) {
   }
   printf(">\n");
 }
+
+sll *create_queue() {
+    sll *l;
+    l = create_sll();
+    return l;
+}
+
+void enque(sll *l, int value){
+    sll_add_to_tail(l, value);
+}
+
+int deque(sll *l){
+    int temp = sll_get_head(l);
+    sll_remove_from_head(l);
+    return temp;
+}
+
+int is_empty(sll *l){
+    return sll_isempty(l);
+}
+
+void deallocate(sll *l){
+    sll_destroy(l);
+}

@@ -4,12 +4,12 @@
 #
 # $Id$
 #
-CFILES=sll.c slltest.c
+CFILES=sll.c queuetest.c
 OFILES=$(CFILES:.c=.o)
 CC=clang -g -Wall
 
-slltest:	$(OFILES)
-	$(CC) -o slltest $(OFILES)
+queuetest:	$(OFILES)
+	$(CC) -o queuetest $(OFILES)
 
 clean::
-	/bin/rm -f slltest $(OFILES)
+	/bin/rm -f queuetest $(OFILES)

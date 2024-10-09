@@ -29,3 +29,9 @@ extern int sll_remove_from_tail(sll *q);
 extern void sll_print_contents(sll *q);
 extern int sll_isempty(sll *q);
 extern void sll_destroy(sll *q);
+
+extern sll *create_queue();
+extern void enque(sll *l, int value);
+extern int deque(sll *l);
+extern int is_empty(sll *l);
+extern void deallocate(sll *l);
